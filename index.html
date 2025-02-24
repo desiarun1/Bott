@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Findolucky Web App</title>
+    <script>
+        let balance = 0;
+
+        function spinWheel() {
+            let rewards = [5, 10, 20, 50, 100, 0];
+            let prize = rewards[Math.floor(Math.random() * rewards.length)];
+            balance += prize;
+            document.getElementById("balance").innerText = "💰 Balance: ₹" + balance;
+            document.getElementById("result").innerText = "🎉 You Won: ₹" + prize;
+        }
+
+        function claimDailyBonus() {
+            balance += 5;
+            document.getElementById("balance").innerText = "💰 Balance: ₹" + balance;
+            alert("🎁 You claimed ₹5 daily bonus!");
+        }
+    </script>
+</head>
+<body>
+    <h2>🎡 Findolucky - Earn Money</h2>
+    <p id="balance">💰 Balance: ₹0</p>
+    <button onclick="spinWheel()">🎡 Spin & Earn</button>
+    <button onclick="claimDailyBonus()">🎁 Claim Daily Bonus</button>
+    <p id="result"></p>
+</body>
+</html>
