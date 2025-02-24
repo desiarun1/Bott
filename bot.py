@@ -3,9 +3,9 @@ import pymongo
 import os
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 
-TOKEN = os.getenv("BOT_TOKEN")
-MONGO_URI = os.getenv("MONGO_URI")
-WEB_APP_URL = os.getenv("WEB_APP_URL")
+TOKEN = os.getenv("7914796490:AAE8tdyuHaYcp4t9ah1xlrruuF31vOdUZdo")
+MONGO_URI = os.getenv("mongodb+srv://surajagriya0:<db_password>@cluster0.vwzng.mongodb.net/")
+WEB_APP_URL = os.getenv("https://desiarun1.github.io/Bott/")
 
 bot = telebot.TeleBot(TOKEN)
 client = pymongo.MongoClient(MONGO_URI)
