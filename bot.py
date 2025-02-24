@@ -3,7 +3,7 @@ import pymongo
 import os
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 
-TOKEN = os.getenv("7914796490:AAE8tdyuHaYcp4t9ah1xlrruuF31vOdUZdo")
+TOKEN = os.getenv("7742838933:AAEHU_oG2JtLSd1L4Nq-an9eAlZOP4v2EXA")
 MONGO_URI = os.getenv("mongodb+srv://surajagriya0:<db_password>@cluster0.vwzng.mongodb.net/")
 WEB_APP_URL = os.getenv("https://desiarun1.github.io/Bott/")
 
